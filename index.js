@@ -41,7 +41,7 @@ function handleCellClicked() {
   )
     return;
   let x = bombPosition.indexOf(parseInt(this.id, 10));
-  console.log(bombPosition);
+  //console.log(bombPosition);
   //check if this.id exists in bombPosition array or not
   if (x !== -1) {
     //show all the bomb position
