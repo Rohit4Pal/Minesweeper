@@ -1,5 +1,6 @@
 const image = document.createElement("img");
-image.src = "/index.jpg";
+image.src =
+  "https://w7.pngwing.com/pngs/220/369/png-transparent-minesweeper-pro-classic-mine-sweeper-minesweeper-plus-likeminesweeper-bomb-game-computer-wallpaper-video-game.png";
 image.id = "image";
 let board = document.getElementById("board");
 board.appendChild(image);
@@ -39,7 +40,7 @@ function handleCellClicked() {
     this.style.backgroundColor === "red"
   )
     return;
-  let x = bombPosition.indexOf(parseInt(this.id,10));
+  let x = bombPosition.indexOf(parseInt(this.id, 10));
   console.log(bombPosition);
   //check if this.id exists in bombPosition array or not
   if (x !== -1) {
